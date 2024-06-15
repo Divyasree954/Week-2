@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu with Higher z-index</title>
+   <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #a09a9a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #0f0d0d;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #0f0d0d;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    z-index: 10000; 
+}
+
+.dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+main {
+    padding: 20px;
+}
+   </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li><a href="#">Service 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Main Content</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti soluta nam rem possimus quia laborum quibusdam necessitatibus libero dolorum, atque reiciendis et? Error praesentium quod atque repellat modi quis nemo ex, ratione ipsum dolorum cumque autem aperiam! Quidem error animi ad eius delectus, perspiciatis facilis officiis provident ipsum velit doloribus quia unde possimus, odit porro in adipisci? Sunt veniam minima quae ea animi corporis, perferendis ipsum aperiam quisquam vel delectus praesentium molestias aspernatur reiciendis eaque tempora asperiores ullam. Quae tempora perferendis, libero saepe rerum obcaecati repudiandae animi nesciunt minus, alias cupiditate odio cum quod maiores numquam impedit odit officiis quidem ducimus assumenda sapiente. Suscipit impedit commodi porro voluptatibus sapiente ullam rem at maxime ipsum odio ab magni, numquam libero id quo ut amet nostrum ipsa, voluptate aperiam? Qui odit et maiores eius incidunt omnis vero architecto sunt, consectetur corporis sit ad nesciunt? Quibusdam, quaerat voluptate fugit, unde dolorem nemo sed praesentium reprehenderit debitis dolor, libero doloremque nobis nesciunt quidem velit amet deleniti sequi vero incidunt nihil! Odio, eveniet. Fugiat dolore doloribus accusantium quibusdam molestias eum consequatur doloremque in enim atque quaerat quisquam maxime quam, omnis beatae culpa quidem? Eos totam modi libero pariatur doloremque fugit voluptatibus nulla molestias earum voluptate, amet quisquam explicabo. Similique tempora voluptas labore, minima eaque, quasi blanditiis optio ut non eveniet ipsum hic libero sed reiciendis soluta voluptatem? Maiores earum corporis quae totam, quos a praesentium sint quibusdam delectus enim officia porro, deserunt voluptas ipsam neque nemo ab doloribus! Doloribus atque consectetur perspiciatis iusto minima blanditiis, at, incidunt exercitationem voluptas nostrum nihil, quibusdam expedita error! Vero sit distinctio facilis repellendus nostrum odit assumenda minima aliquid dicta deserunt aspernatur pariatur officia reiciendis esse ab laboriosam, maiores molestiae blanditiis accusantium velit nisi atque voluptates sequi. Rerum ipsam voluptatum perferendis iusto, tempore, atque nobis hic ab sunt quibusdam similique veritatis cupiditate quam adipisci dolor repellat eaque pariatur repudiandae quis. Laborum suscipit minima excepturi molestiae id harum cupiditate, molestias doloribus facere quidem cumque, voluptatibus perspiciatis consequatur non earum optio nihil assumenda adipisci magni omnis distinctio enim quisquam eius. Cumque voluptatem fugit culpa et minima voluptas modi iure magni saepe distinctio libero, ab sint, ipsum molestiae est a incidunt dolorem quaerat sapiente eaque? Ex, beatae velit architecto nulla, ea at exercitationem molestias illo sit, iste id commodi voluptate pariatur optio! Distinctio saepe quis voluptatum non voluptas modi ratione maiores, debitis possimus animi optio recusandae laboriosam et minima magnam repellat ipsa suscipit quas, autem natus quod rerum fugiat. Reprehenderit tempore nesciunt aliquam modi excepturi eos adipisci perferendis, voluptatum, neque, nemo dicta magni! Id at soluta tempore nam dolorum culpa, quidem similique eaque quas debitis dolorem, accusantium natus facere. Numquam quisquam nihil labore deleniti voluptatem in nulla ullam alias laudantium ad, corrupti id iste maiores, officia, esse ratione? Corporis ipsa officiis praesentium saepe quam, possimus ut ab repudiandae libero numquam quo itaque ipsam facilis dolore, voluptatum eum vel non obcaecati, porro voluptates dolorem culpa laborum aliquam. Neque ipsa possimus recusandae tempore tempora beatae labore ratione magnam. Optio distinctio tenetur, alias provident quaerat unde! ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
+        <p>Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.</p>
+    </main>
+</body>
+</html>
